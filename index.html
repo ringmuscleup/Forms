@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/forms.css">
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Hamster Special Forces sign up</h1>
+    <p id="description" class="description-text-center">It's for a worthy cause.</p>
+  </header>
+    <form id="survey-form"> 
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+          <input
+                 type="text"
+                 name="name"
+                 id="name"
+                 class="form-controll"
+                 placeholder="Enter your name"
+                 required
+                 />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+          <input
+                 type="email"
+                 name="email"
+                 id="email"
+                 class="form-controll"
+                 placeholder="Enter your email"
+                 required
+                 />
+      </div>
+      <div class="form-group">
+         <label id="number-label" for="number">Number of hamsters owned<span class="clue">(absolutely required)</span></label>
+        <input
+               type="number"
+               name="number"
+               id="number"
+               min="1"
+               max="9000"
+               class="form-controll"
+               placeholder="Hamsters"
+               required
+               />
+      </div>
+      <div class="form-group">
+        <p>What is your level of hamster handling?</p>
+          <select id="dropdown" name="handling" class="form-controll" required>
+            <option value="N/a" disable selected option>Select level</option>
+            <option value="beginner">Beginner handler</option>
+            <option value="intermediate">Intermediate           handler</option>
+            <option value="expert">Expert handler</option>
+            <option value="Master">Hamster Master</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Would you ever put your hamster in danger?</p>
+        <label> 
+        <input
+                 name="hamster-danger"
+                 value="definitely"
+                 type="radio"
+                 class="input-radio"
+                 checked
+               />Definitely</label>
+        <label>
+          <input
+                 name="hamster-danger"
+                 value="Maybe/Depends"
+                 type="radio"
+                 class="input-radio"
+                 />Maybe/Depends</label>
+        <label>
+          <input
+                 name="hamster-danger"
+                 value="Never"
+                 type="radio"
+                 class="input-radio"
+                 />Never</label>
+      </div>
+        <div class="form-group">
+         <p>Which weapon(s) can your hamster weild effectively?</p>
+          <select id="weapons" class="form-controll" name="weapons">
+          
+            <option value="deselect" disable selected value>Select a Weapon</option>
+            <option value="flamethrower">Flamethrower</option>
+            <option value="katana">Katana</option>
+            <option value="pistol">Pistol</option>
+            <option value="rifle">Rifle</option>
+            <option value="battle-axe">Battle Axe</option>
+            <option value="poison-darts">Poison Darts</option>
+            <option value="explosives">Explosives</option>
+            <option value="other">Other</option>
+            <option value="none">None</option>
+          </select>
+      </div>
+            
+       <div class="form-group">
+         <p>Does you hamster have any training in these feilds?<span class="info">(check all that apply)</span></p>
+          <label for="training">
+            <input
+                   name="training"
+                   id="training"
+                   value="hand-to-hand-combat"
+                   type="checkbox"
+                   class="input-checkbox"
+                   />Hand to hand combat</label>
+         <label for="training">
+            <input
+                   name="training"
+                   id="training"
+                   value="computer-hacking"
+                   type="checkbox"
+                   class="input-checkbox"
+                   />Computer Hacking</label>
+         <label for="training">
+            <input
+                   name="training"
+                   id="training"
+                   value="stealth-reconnaisance"
+                   type="checkbox"
+                   class="input-checkbox"
+                   />Stealth Reconnaisance</label>
+         <label for="training">
+            <input
+                   name="training"
+                   id="training"
+                   value="foreign-languages"
+                   type="checkbox"
+                   class="input-checkbox"
+                   />Foreign Languages</label>
+         <label for="training">
+            <input
+                   name="training"
+                   id="training"
+                   value="interogation"
+                   type="checkbox"
+                   class="input-checkbox"
+                   />Interogation and Prisoner Containment</label>
+         <label for="training">
+            <input
+                   name="training"
+                   id="training"
+                   value="vehicle"
+                   type="checkbox"
+                   class="input-checkbox"
+                   />Piloting and Vehicle Driving Skills</label>
+         <label for="training">
+            <input
+                   name="training"
+                   id="training"
+                   value="combat-medic"
+                   type="checkbox"
+                   class="input-checkbox"
+                   />Combat Medicine</label>
+      </div>
+      <div class="form-group">
+        <p>Any questions or comments?</p>
+        <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Enter your comment here..."
+                  ></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+    </div>
+  
+    </html>
+        
+      
+            
+      
+                 
+        
